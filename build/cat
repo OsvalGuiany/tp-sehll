@@ -1,0 +1,9 @@
+cat
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestTestfile.cmake
+ensishell
+Makefile

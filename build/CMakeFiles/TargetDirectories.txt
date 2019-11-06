@@ -1,0 +1,7 @@
+/home/osvaldo/ensimag-shell/build/CMakeFiles/rebuild_cache.dir
+/home/osvaldo/ensimag-shell/build/CMakeFiles/check.dir
+/home/osvaldo/ensimag-shell/build/CMakeFiles/ensishell.dir
+/home/osvaldo/ensimag-shell/build/CMakeFiles/edit_cache.dir
+/home/osvaldo/ensimag-shell/build/CMakeFiles/package.dir
+/home/osvaldo/ensimag-shell/build/CMakeFiles/package_source.dir
+/home/osvaldo/ensimag-shell/build/CMakeFiles/test.dir
