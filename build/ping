@@ -1,0 +1,32 @@
+PING www.google.com (216.58.213.132) 56(84) bytes of data.
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=1 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=2 ttl=57 time=12.9 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=3 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=4 ttl=57 time=13.0 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=5 ttl=57 time=13.1 ms
+PING www.google.com (216.58.213.132) 56(84) bytes of data.
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=1 ttl=57 time=11.2 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=6 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=2 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=7 ttl=57 time=12.4 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=3 ttl=57 time=13.2 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=8 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=4 ttl=57 time=12.1 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=9 ttl=57 time=13.1 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=5 ttl=57 time=11.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=10 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=6 ttl=57 time=13.2 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=11 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=7 ttl=57 time=12.0 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=12 ttl=57 time=12.8 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=8 ttl=57 time=13.4 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=13 ttl=57 time=12.7 ms
+64 bytes from par21s03-in-f4.1e100.net (216.58.213.132): icmp_seq=9 ttl=57 time=11.8 ms
+
+--- www.google.com ping statistics ---
+13 packets transmitted, 13 received, 0% packet loss, time 12016ms
+rtt min/avg/max/mdev = 12.489/12.868/13.125/0.221 ms
+
+--- www.google.com ping statistics ---
+9 packets transmitted, 9 received, 0% packet loss, time 8008ms
+rtt min/avg/max/mdev = 11.258/12.444/13.475/0.749 ms

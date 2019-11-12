@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/osvaldo/ensimag-shell
+CMAKE_SOURCE_DIR = /home/osvaldo/tp-shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/osvaldo/ensimag-shell/build
+CMAKE_BINARY_DIR = /home/osvaldo/tp-shell/build
 
 # Utility rule file for check.
 
@@ -71,6 +71,6 @@ CMakeFiles/check.dir/clean:
 .PHONY : CMakeFiles/check.dir/clean
 
 CMakeFiles/check.dir/depend:
-	cd /home/osvaldo/ensimag-shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/osvaldo/ensimag-shell /home/osvaldo/ensimag-shell /home/osvaldo/ensimag-shell/build /home/osvaldo/ensimag-shell/build /home/osvaldo/ensimag-shell/build/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/osvaldo/tp-shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/osvaldo/tp-shell /home/osvaldo/tp-shell /home/osvaldo/tp-shell/build /home/osvaldo/tp-shell/build /home/osvaldo/tp-shell/build/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check.dir/depend
 

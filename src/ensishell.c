@@ -33,6 +33,11 @@ int question6_executer(char *line)
 	 * parsecmd, then fork+execvp, for a single command.
 	 * pipe and i/o redirection are not required.
 	 */
+    
+	printf("vous êtes la bienvenue \n");
+	struct cmdline cmds = parsecmd(&line);
+	exec_line(*cmds);
+	
 	printf("Not implemented yet: can not execute %s\n", line);
 
 	/* Remove this line when using parsecmd as it will free it */
@@ -116,7 +121,7 @@ int main() {
 			continue;
 		}
 
-        exec_cmd(l);
+        exec_line(l);
 		if (l->in) printf("in: %s\n", l->in);
 		if (l->out) printf("out: %s\n", l->out);
 		if (l->bg) printf("background (&)\n");

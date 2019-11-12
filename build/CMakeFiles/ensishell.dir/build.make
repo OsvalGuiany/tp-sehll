@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/osvaldo/ensimag-shell
+CMAKE_SOURCE_DIR = /home/osvaldo/tp-shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/osvaldo/ensimag-shell/build
+CMAKE_BINARY_DIR = /home/osvaldo/tp-shell/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ensishell.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/ensishell.dir/flags.make
 
 CMakeFiles/ensishell.dir/src/readcmd.c.o: CMakeFiles/ensishell.dir/flags.make
 CMakeFiles/ensishell.dir/src/readcmd.c.o: ../src/readcmd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osvaldo/ensimag-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ensishell.dir/src/readcmd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ensishell.dir/src/readcmd.c.o   -c /home/osvaldo/ensimag-shell/src/readcmd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osvaldo/tp-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ensishell.dir/src/readcmd.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ensishell.dir/src/readcmd.c.o   -c /home/osvaldo/tp-shell/src/readcmd.c
 
 CMakeFiles/ensishell.dir/src/readcmd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ensishell.dir/src/readcmd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osvaldo/ensimag-shell/src/readcmd.c > CMakeFiles/ensishell.dir/src/readcmd.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osvaldo/tp-shell/src/readcmd.c > CMakeFiles/ensishell.dir/src/readcmd.c.i
 
 CMakeFiles/ensishell.dir/src/readcmd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ensishell.dir/src/readcmd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osvaldo/ensimag-shell/src/readcmd.c -o CMakeFiles/ensishell.dir/src/readcmd.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osvaldo/tp-shell/src/readcmd.c -o CMakeFiles/ensishell.dir/src/readcmd.c.s
 
 CMakeFiles/ensishell.dir/src/readcmd.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/ensishell.dir/src/readcmd.c.o.provides.build: CMakeFiles/ensishell.di
 
 CMakeFiles/ensishell.dir/src/execution.c.o: CMakeFiles/ensishell.dir/flags.make
 CMakeFiles/ensishell.dir/src/execution.c.o: ../src/execution.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osvaldo/ensimag-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ensishell.dir/src/execution.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ensishell.dir/src/execution.c.o   -c /home/osvaldo/ensimag-shell/src/execution.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osvaldo/tp-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ensishell.dir/src/execution.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ensishell.dir/src/execution.c.o   -c /home/osvaldo/tp-shell/src/execution.c
 
 CMakeFiles/ensishell.dir/src/execution.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ensishell.dir/src/execution.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osvaldo/ensimag-shell/src/execution.c > CMakeFiles/ensishell.dir/src/execution.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osvaldo/tp-shell/src/execution.c > CMakeFiles/ensishell.dir/src/execution.c.i
 
 CMakeFiles/ensishell.dir/src/execution.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ensishell.dir/src/execution.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osvaldo/ensimag-shell/src/execution.c -o CMakeFiles/ensishell.dir/src/execution.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osvaldo/tp-shell/src/execution.c -o CMakeFiles/ensishell.dir/src/execution.c.s
 
 CMakeFiles/ensishell.dir/src/execution.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/ensishell.dir/src/execution.c.o.provides.build: CMakeFiles/ensishell.
 
 CMakeFiles/ensishell.dir/src/ensishell.c.o: CMakeFiles/ensishell.dir/flags.make
 CMakeFiles/ensishell.dir/src/ensishell.c.o: ../src/ensishell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osvaldo/ensimag-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ensishell.dir/src/ensishell.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ensishell.dir/src/ensishell.c.o   -c /home/osvaldo/ensimag-shell/src/ensishell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osvaldo/tp-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ensishell.dir/src/ensishell.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ensishell.dir/src/ensishell.c.o   -c /home/osvaldo/tp-shell/src/ensishell.c
 
 CMakeFiles/ensishell.dir/src/ensishell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ensishell.dir/src/ensishell.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osvaldo/ensimag-shell/src/ensishell.c > CMakeFiles/ensishell.dir/src/ensishell.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osvaldo/tp-shell/src/ensishell.c > CMakeFiles/ensishell.dir/src/ensishell.c.i
 
 CMakeFiles/ensishell.dir/src/ensishell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ensishell.dir/src/ensishell.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osvaldo/ensimag-shell/src/ensishell.c -o CMakeFiles/ensishell.dir/src/ensishell.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osvaldo/tp-shell/src/ensishell.c -o CMakeFiles/ensishell.dir/src/ensishell.c.s
 
 CMakeFiles/ensishell.dir/src/ensishell.c.o.requires:
 
@@ -143,7 +143,7 @@ ensishell: CMakeFiles/ensishell.dir/src/execution.c.o
 ensishell: CMakeFiles/ensishell.dir/src/ensishell.c.o
 ensishell: CMakeFiles/ensishell.dir/build.make
 ensishell: CMakeFiles/ensishell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osvaldo/ensimag-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ensishell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osvaldo/tp-shell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ensishell"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ensishell.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/ensishell.dir/clean:
 .PHONY : CMakeFiles/ensishell.dir/clean
 
 CMakeFiles/ensishell.dir/depend:
-	cd /home/osvaldo/ensimag-shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/osvaldo/ensimag-shell /home/osvaldo/ensimag-shell /home/osvaldo/ensimag-shell/build /home/osvaldo/ensimag-shell/build /home/osvaldo/ensimag-shell/build/CMakeFiles/ensishell.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/osvaldo/tp-shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/osvaldo/tp-shell /home/osvaldo/tp-shell /home/osvaldo/tp-shell/build /home/osvaldo/tp-shell/build /home/osvaldo/tp-shell/build/CMakeFiles/ensishell.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ensishell.dir/depend
 

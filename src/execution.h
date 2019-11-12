@@ -12,4 +12,9 @@ struct background_job {
    struct background_job *next;
 };
 
-void exec_cmd(struct cmdline *line);
+void init_nb_cmd(char ***seq);
+void exec_cmd(struct cmdline *line, int i);
+void exec_line(struct cmdline *line);
+void print_jobs();
+void add_job(char *cmd, pid_t pid);
+void remove_job(pid_t pid);

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/osvaldo/ensimag-shell/src/ensishell.c" "/home/osvaldo/ensimag-shell/build/CMakeFiles/ensishell.dir/src/ensishell.c.o"
-  "/home/osvaldo/ensimag-shell/src/execution.c" "/home/osvaldo/ensimag-shell/build/CMakeFiles/ensishell.dir/src/execution.c.o"
-  "/home/osvaldo/ensimag-shell/src/readcmd.c" "/home/osvaldo/ensimag-shell/build/CMakeFiles/ensishell.dir/src/readcmd.c.o"
+  "/home/osvaldo/tp-shell/src/ensishell.c" "/home/osvaldo/tp-shell/build/CMakeFiles/ensishell.dir/src/ensishell.c.o"
+  "/home/osvaldo/tp-shell/src/execution.c" "/home/osvaldo/tp-shell/build/CMakeFiles/ensishell.dir/src/execution.c.o"
+  "/home/osvaldo/tp-shell/src/readcmd.c" "/home/osvaldo/tp-shell/build/CMakeFiles/ensishell.dir/src/readcmd.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
