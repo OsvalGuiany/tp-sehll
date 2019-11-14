@@ -50,7 +50,7 @@ if (NOT "${GUILE_PKG_LDFLAGS}" STREQUAL "")
     string(REPLACE "-lltdl" "/usr/lib64/libltdl.so.7" GUILE_LDFLAGS ${GUILE_LDFLAGS})
   endif()
 else()
-  set(USE_GUILE 1)
+  set(USE_GUILE 0)
 endif()
 
 ####

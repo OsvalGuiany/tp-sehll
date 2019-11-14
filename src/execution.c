@@ -96,6 +96,9 @@ void exec_line(struct cmdline *line){
             } else{
                 add_job(line->seq[i][0], pid_f);
             }
+            //int status;
+            //pid_t pid = waitpid(-1, &status, WNOHANG);
+            //remove_job(pid);
         }
         
         
@@ -119,7 +122,7 @@ void add_job(char *cmd, pid_t pid){
    char *c;
    c = malloc(strlen(cmd)*sizeof(char));
    sprintf(c, "%s", cmd);
-   struct background_job *job = malloc(sizeof(struct background_job *));
+   struct background_job *job = malloc(sizeof(struct background_job ));
    job->cmd = c;
    job->pid = pid;
    job->next = NULL;
@@ -129,10 +132,10 @@ void add_job(char *cmd, pid_t pid){
 
    else{
        struct background_job *job_tmp = main_job;
-       while(job_tmp == NULL){
-           if(job_tmp->pid == pid){
+       while(job_tmp->next != NULL){
+           /*if(job_tmp->pid == pid){
                break;
-           }
+           }*/
            job_tmp = job_tmp->next;
        }
 
@@ -141,6 +144,7 @@ void add_job(char *cmd, pid_t pid){
 }
 
 void remove_job(pid_t pid){
+    printf(" le pid est : %d \n", pid);
     struct background_job *job_tmp, *prev;
     job_tmp = main_job;
 
