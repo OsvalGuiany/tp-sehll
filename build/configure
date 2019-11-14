@@ -1,0 +1,3 @@
+CPPFLAGS="$CPPFLAGS $(pkg-config --cflags-only-I guile-2.0)" \
+CFLAGS="$CFLAGS $(pkg-config --cflags-only-other guile-2.0)" \
+LDFLAGS="$LDFLAGS $(pkg-config --libs guile-2.0)" \
