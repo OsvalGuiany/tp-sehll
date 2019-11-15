@@ -1,0 +1,33 @@
+Start testing: Nov 15 00:32 CET
+----------------------------------------------------------
+1/1 Testing: UnitShellTests
+1/1 Test: UnitShellTests
+Command: "/home/osvaldo/tp-shell/tests/allShellTests.rb"
+Directory: /home/osvaldo/tp-shell/build
+"UnitShellTests" start time: Nov 15 00:32 CET
+Output:
+----------------------------------------------------------
+Run options: --seed 51773
+
+# Running:
+
+........Fpipe 13 13
+.
+
+Finished in 1.174684s, 8.5129 runs/s, 14.4720 assertions/s.
+
+  1) Failure:
+Test2InOut#test_parallelisme [/home/osvaldo/tp-shell/tests/testInOut.rb:63]:
+le | ne semble pas parallèle.
+Expected nil to not be nil.
+
+10 runs, 17 assertions, 1 failures, 0 errors, 0 skips
+<end of output>
+Test time =   1.90 sec
+----------------------------------------------------------
+Test Failed.
+"UnitShellTests" end time: Nov 15 00:32 CET
+"UnitShellTests" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Nov 15 00:32 CET

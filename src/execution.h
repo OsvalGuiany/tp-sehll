@@ -12,6 +12,8 @@ struct background_job {
    struct background_job *next;
 };
 
+void sig_handler(int signo);
+void handle_child();
 void init_nb_cmd(char ***seq);
 void exec_cmd(struct cmdline *line, int i);
 void exec_line(struct cmdline *line);

@@ -29,6 +29,10 @@ stdlib.h
 -
 string.h
 -
+signal.h
+-
+sys/time.h
+-
 wait.h
 -
 variante.h

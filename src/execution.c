@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <signal.h>
+#include <sys/time.h>
 #include <wait.h>
 
 #include "variante.h"
@@ -11,6 +13,17 @@ static struct background_job *main_job;
 int process_pipe[2];
 int data_pipe[2][2];
 int nb_cmd;
+struct timeval time_before, time_after;
+
+void sig_handler(int signo){
+    switch (signo) {
+        case SIGCHLD:
+            gettimeofday(&time_after, NULL);
+            handle_child();
+            break;
+    }
+}
+
 
 void init_nb_cmd(char ***seq){
     int i =0;
@@ -19,6 +32,15 @@ void init_nb_cmd(char ***seq){
     }
 
     nb_cmd = i;
+}
+
+void handle_child(){
+    time_t secs_after = time_after.tv_sec;
+    time_t usecs_after = time_after.tv_usec;
+    time_t secs_before = time_before.tv_sec;
+    time_t usecs_before = time_before.tv_usec;
+    time_t times_taken = ((secs_after - secs_before) * 1000000 +usecs_after) - usecs_before;
+    printf("temps d'éxécution en %f seconds \n", ((float)times_taken)/1000000);
 }
 void exec_cmd(struct cmdline *line, int i){
     char **seq = line->seq[i];
@@ -59,15 +81,17 @@ void exec_cmd(struct cmdline *line, int i){
         close(pipe_out);
     } else {
         execvp(seq[0], seq);
+        printf("le execvp est fini \n");
+        if(execvp(seq[0], seq)<0){
+            printf("command not found ! \n");
+        }
     }
    
 }
 
 void exec_line(struct cmdline *line){
     int i=0;
-
     init_nb_cmd(line->seq);
-    
     if (pipe(data_pipe[0]) == -1 ) {
         perror("error while creating pipe \n");
         exit(EXIT_FAILURE);
@@ -79,6 +103,7 @@ void exec_line(struct cmdline *line){
             exit(EXIT_FAILURE);
         }
 
+        gettimeofday (&time_before, NULL);
         pid_t pid_f = fork();
 
         if(pid_f == -1){
@@ -95,14 +120,19 @@ void exec_line(struct cmdline *line){
                 wait(NULL);
             } else{
                 add_job(line->seq[i][0], pid_f);
+
+                struct sigaction sh;
+                sh.sa_handler = sig_handler;
+                sigaction(SIGCHLD, &sh, NULL);
             }
             //int status;
             //pid_t pid = waitpid(-1, &status, WNOHANG);
             //remove_job(pid);
         }
         
-        
+        close(data_pipe[i%2][0]);
         close(data_pipe[i%2][1]);
+        close(data_pipe[(i+1)%2][1]);
         i++;
     }
    
