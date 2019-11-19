@@ -217,6 +217,9 @@ Ensishell_BINARY_DIR:STATIC=/home/osvaldo/tp-shell/build
 //Value Computed by CMake
 Ensishell_SOURCE_DIR:STATIC=/home/osvaldo/tp-shell
 
+//Path to a library.
+LIBLTDL:FILEPATH=/usr/lib/x86_64-linux-gnu/libltdl.so
+
 //Path to a file.
 READLINE_PATH:PATH=/usr
 

@@ -1,1 +1,1 @@
-/usr/bin/cc -g  -Wall -Werror -std=gnu99  -rdynamic CMakeFiles/ensishell.dir/src/readcmd.c.o CMakeFiles/ensishell.dir/src/execution.c.o CMakeFiles/ensishell.dir/src/ensishell.c.o  -o ensishell -lreadline -lhistory 
+/usr/bin/cc -g -pthread -I/usr/include/guile/2.0 -Wall -Werror -std=gnu99  -rdynamic CMakeFiles/ensishell.dir/src/readcmd.c.o CMakeFiles/ensishell.dir/src/execution.c.o CMakeFiles/ensishell.dir/src/ensishell.c.o  -o ensishell -lreadline -lhistory -lguile-2.0 -lgc 

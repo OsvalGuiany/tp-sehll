@@ -34,11 +34,8 @@ int question6_executer(char *line)
 	 * pipe and i/o redirection are not required.
 	 */
     
-	printf("vous êtes la bienvenue \n");
-	struct cmdline cmds = parsecmd(&line);
-	exec_line(*cmds);
-	
-	printf("Not implemented yet: can not execute %s\n", line);
+	struct cmdline *cmds = parsecmd(&line);
+	exec_line(cmds);
 
 	/* Remove this line when using parsecmd as it will free it */
 	free(line);
